@@ -10,7 +10,7 @@ interface mainNavProps {
   data: Category[];
 }
 
-const mainNav: React.FC<mainNavProps> = ({ data }) => {
+const MainNav: React.FC<mainNavProps> = ({ data }) => {
   const pathname = usePathname();
 
   const routes = data.map((route) => ({
@@ -37,4 +37,4 @@ const mainNav: React.FC<mainNavProps> = ({ data }) => {
   );
 };
 
-export default mainNav;
+export default MainNav;
